@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { Title, Input } from "./Filter.styled";
 const Filter = ({ value, changeFilter }) => {
   return (
@@ -9,3 +11,8 @@ const Filter = ({ value, changeFilter }) => {
 };
 
 export default Filter;
+
+Filter.propTypes = {
+  value: PropTypes.string,
+  changeFilter: PropTypes.func,
+};

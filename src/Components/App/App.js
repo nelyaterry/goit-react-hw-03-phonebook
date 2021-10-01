@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import { Phonebook, Title, SubTitle, ContactBox } from "./App.styled";
 import ContactForm from "../ContactForm/ContactForm";
 import Contacts from "../Contacts/Contacts";
@@ -63,7 +64,6 @@ export default class App extends Component {
   };
 
   render() {
-    console.log("i am render");
     const { filter } = this.state;
     return (
       <>
